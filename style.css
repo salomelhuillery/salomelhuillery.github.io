@@ -1,0 +1,250 @@
+.navbar {
+    /* overflow: hidden; */
+    background-color: #E5A0CC;
+    border-top: 1px #FCFEFC solid;
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    left: 0;
+    right: 0;
+
+  }
+ 
+
+    /* Dropup Button */
+    .dropbtn {
+      background-color: #E5A0CC;
+      color: rgb(0, 0, 0);
+      font-size: 12px;
+      border: none;
+      margin-left: 6px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+
+    }
+    
+    /* The container <div> - needed to position the dropup content */
+    .dropup {
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Dropup content (Hidden by Default) */
+    .dropup-content {
+      display: none;
+      position: absolute;
+      bottom: 28px;
+      background-color: #E5A0CC;
+      min-width: 160px;
+      z-index: 8;
+      background-color: #E5A0CC;
+      border-top: 1px #FCFEFC solid;
+      border-right: 1px #7C7E7C solid;;
+    }
+    
+    /* Links inside the dropup */
+    .dropup-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropup-content a:hover{
+      border: 1px black dotted;
+    }
+    
+    /* Show the dropup menu on hover */
+    .dropup:hover .dropup-content {
+      display: block;
+    }
+    /* Change the background color of the dropup button when the dropup content is shown */
+    .dropup:hover .dropbtn {
+      border:1px #7C7E7C solid;
+      box-shadow: inset 1px 1px 1px #7F7D7F;
+      margin-right: 10px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      
+    }
+
+    
+  .navbar .date {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: right;
+    display: block;
+    color: black;
+    padding: 0px  20px ;
+    font-size: 14px;
+    border:1px #7C7E7C solid;
+    box-shadow: inset 1px 1px 1px #7F7D7F;
+    margin-right: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+ 
+html{
+    background-image: url('background.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
+    }
+ 
+#name {
+    min-width: 50%;
+    margin-top: 100%;
+    z-index: 0;
+}
+
+#avatar{
+  float: right;
+  display: block;
+  margin-bottom:50%;
+}
+
+.top {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.cv{
+  z-index: 99;
+  margin-left: 200px;
+
+}
+
+.flex-container {
+  position: absolute;
+  display: flex; 
+  flex-flow: row wrap; 
+  justify-content: space-around;
+  z-index: 0;
+  padding: 0;
+  margin: 0px;
+  margin-left: 10vw;
+
+}
+
+#french{
+  z-index: 99;
+} 
+
+#eng{
+  z-index: 99;
+}
+
+#iconbottom{
+  margin-top: 70vh;
+  margin-left: 5vw;
+  z-index: 5;
+}
+
+
+
+/* .flex-containerbottom {
+  display: flex;
+  flex-flow: row wrap; 
+  justify-content: space-evenly;
+  position: absolute;
+  
+  padding: 0;
+  margin: 0;
+  z-index: 0; */
+/* 
+} */
+  
+
+  .flex-item {
+    padding: 5px;
+    width: 300px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+  }
+
+
+.window{
+  color: pink;
+  max-width: 100vw;
+ 
+}
+
+
+
+.title-bar-text{
+  font-size: 12px;
+}
+
+#music{
+  display: block; margin-top: 10%; margin-left: 70%;
+}
+ 
+
+    @media (max-width: 1000px) {
+#music{
+  display: none; 
+  margin-top: 0%; 
+  margin-left: 0%;
+  }
+
+  #avatar {
+    display: none;
+  }
+
+  #maxfrench{
+    display:none;
+  }
+  #maxeng{
+    display:none;
+  }
+
+    }
+
+
+
+
+
+
+
+
+
+    .blink {
+      -webkit-animation: blink .75s linear infinite;
+      -moz-animation: blink .75s linear infinite;
+      -ms-animation: blink .75s linear infinite;
+      -o-animation: blink .75s linear infinite;
+      animation: blink .75s linear infinite;
+     }
+     @-webkit-keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 1; }
+      50.01% { opacity: 0; }
+      100% { opacity: 0; }
+     }
+     @-moz-keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 1; }
+      50.01% { opacity: 0; }
+      100% { opacity: 0; }
+     }
+     @-ms-keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 1; }
+      50.01% { opacity: 0; }
+      100% { opacity: 0; }
+     }
+     @-o-keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 1; }
+      50.01% { opacity: 0; }
+      100% { opacity: 0; }
+     }
+     @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 1; }
+      50.01% { opacity: 0; }
+      100% { opacity: 0; }
+     }

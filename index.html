@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="95.css" >
+    <title>Salome Lhuillery</title>
+    <style>
+      body {font-size: 14px;}
+    </style>
+</head>
+<body>
+ 
+<div class="navbar"> <!--Ici menu en haut de la page-->
+    <div class="dropup" style="z-index: 999;">
+        <button class="dropbtn" style="font-weight:bold;">Check me out on socials</button>
+        <div class="dropup-content" style="z-index: 999;">
+          <a href="https://fr.linkedin.com/in/salome-lhuillery"target="_blank"> <img src="linkedin.png" width="20px", height="20px", style="padding-right:10px;";>LinkedIn </a>
+         
+          <a href="https://fr.linkedin.com/in/salome-lhuillery"target="_blank"> <img src="instagram.png" width="20px", height="20px", style="padding-right:10px;";>Instagram </a>
+
+        </div>
+      </div>
+ 
+
+    <p class="date">
+        <script> document.write(new Date().toLocaleDateString()); </script>
+    </p>
+  </div>
+
+
+
+
+
+<div class='top'>
+<!-- SAlOME -->
+    <div class="flex-container">
+        <div class='google'>
+        <img src="salome.png" " id="name" class="flex-item" >
+        </div>
+<!-- AVATAR -->
+        <div class="window" style="margin: 200px; width: 320px" id='avatar'class='flex-item'>
+            <div class="title-bar">
+                <div class="title-bar-text">
+                        Hello, it's me
+                </div>
+                <div class="title-bar-controls">
+                    <button aria-label="Close" onclick="closeavatar()" ></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <img src="helloitsme.png" style="max-width: 300px;">
+            </div>
+        </div>
+    </div>
+
+
+<!-- ICONS -->
+    <div class="flex-container" id="iconbottom">
+        <div class="folder_icon" style="padding-right:20px; padding-top:20px; padding-left:20px;" id="icon1">
+            <img src="file.png" alt="" onclick="opencv()">
+            <p style="color: #CE119C; padding-left: 10px;">CV</p>
+        </div>
+        <div class="email" id="icon2">
+            <img src="email.png"  style="padding-right:20px; padding-top:20px; padding-left:20px" onclick=sendemail()> 
+            <p style="color: #CE119C; padding-left: 20px;">Contact</p>
+        </div>
+        <div class="article" id="icon3">
+            <img src="NOTEPAD.png" style="padding-right:20px; padding-top:20px; padding-left:20px" onclick="openarticle()"> 
+            <p style="color: #CE119C; padding-left: 20px;">Read</p>
+        </div>
+        <div></div>
+        <div></div>
+    </div>
+
+<!-- CV QUI APPARAIT french-->
+    <div class="flex-container cv french" id="french" style="display: none;">
+        <div class="window" style="min-width: 100%;">
+            <div class="title-bar">
+              <div class="title-bar-text">Mon CV</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize" id="minfrench"></button>
+                <button aria-label="Maximize" id="maxfrench" class="maxx"></button>
+                <button aria-label="Close" onclick="closefrench()"></button>
+              </div>
+            </div>
+            <div class="window-body">
+                <img src="Salome Lhuillery CDUI CV.png" id="frenchimage"  style="max-width: 100vw;">
+            </div>
+          </div>
+        </div>
+
+<!-- CV QUI APPARAIT english-->
+    <div class="flex-container cv eng" id="eng" style="display: none;">
+        <div class="window" style="min-width: 100%;">
+            <div class="title-bar">
+              <div class="title-bar-text">My resume</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize" id="mineng"></button>
+                <button aria-label="Maximize" id="maxeng" class="maxx"></button>
+                <button aria-label="Close" onclick="closeeng()"></button>
+              </div>
+            </div>
+            <div class="window-body">
+                <img src="Salome Lhuillery UI EN.png" id="engimage" style="max-width: 100vw;">
+            </div>
+          </div>
+        </div>
+
+<!-- CHOIX DU CV -->
+        <div class="flex-container CV" id="cv" style="display: none; margin-top: 15%;">
+            <div class="window" style="min-width: 200px;">
+                <div class="title-bar">
+                  <div class="title-bar-text">Mon CV</div>
+                  <div class="title-bar-controls">
+                    <button aria-label="Close" onclick="closecv()"></button>
+                  </div>
+                </div>
+                <section class="field-row" style="justify-content: flex-start">
+                <div  id="icon3" style="padding-right:20px; padding-top:20px; padding-left:20px">
+                    <img src="world.png" onclick="openfrench()"> 
+                    <p style="color: black;">Français</p>
+                </div>
+                <div  id="icon3"style="padding-right:20px; padding-top:20px; padding-left:20px">
+                    <img src="world.png" onclick="openeng()" > 
+                    <p style="color: black;">English</p>
+                </div>
+            </section>
+              </div>
+            </div>
+
+
+
+
+
+<!-- ARTICLE QUI APPARAIT -->
+        <div class="flex-container article" id="article" style="display: none;">
+            <div class="window" style="min-width: 200px;">
+                <div class="title-bar">
+                  <div class="title-bar-text">Mon article</div>
+                  <div class="title-bar-controls">
+                    <button aria-label="Minimize" id="minart"></button>
+                    <button aria-label="Close" onclick="closearticle()"></button>
+                  </div>
+                </div>
+                <div class="window-body">
+                    <p style="color:black; font-size: 12px;">Read my article on women's representation in video games published by the Gender in Geopolitics Institute.</p>
+                    <section class="field-row" style="justify-content: flex-end">
+                        <a href="https://igg-geo.org/?p=2884&lang=en"target="_blank"><button>Read</button></a>
+                    <button onclick="closearticle()">Cancel</button>
+                    </section>
+                </div>
+              </div>
+            </div>
+</div>
+
+
+
+
+<!-- SPOTIFY -->
+<div class="flex-container article" id="music" >
+    <div class="window" style="min-width: 200px;">
+        <div class="title-bar">
+          <div class="title-bar-text">My cosy playlist</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close" onclick="closemusic()"></button>
+          </div>
+        </div>
+        <div class="window-body">
+            <p style="color:black; font-size: 12px;">Listen to my cosy playlist.</p>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2aWIbieB94ydZI1SBim7fU?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </section>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<!-- STAGE -->
+<div class="flex-container article" id="int" style="display: block; margin-top: 20%; margin-right: 10%;">
+  <div class="window" style="min-width: 200px;">
+      <div class="title-bar">
+        <div class="title-bar-text">Internship wanted</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize" id="minint"></button>
+          <button aria-label="Close" onclick="closeint()"></button>
+        </div>
+      </div>
+      <div class="window-body">
+          <p style="color:black; font-size: 18px;" class="blink">Je cherche un stage en web design du 10 Juin au 29 Juillet 2022 !</p>
+          <section class="field-row" style="justify-content: flex-end">
+              <a href="mailto:salomelhuillery@gmail.com"><button>Contact me</button></a>
+          <button onclick="closeint()">Next time ?</button>
+          </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPT CI DESSOUS -->
+<script src="jssalome.js"></script>
+<script src="jquery-3.6.0.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+<script>
+$("#cv").draggable();
+$("#avatar").draggable();
+$("#icon1,#icon2,#icon3").draggable();
+$("#article").draggable();
+$("#french").draggable();
+$("#eng").draggable();
+$("#music").draggable();
+
+$("#maxcv").click(function () {
+    $("#cv, #cvimage").css("width", "100%");
+    })
+
+$("#maxfrench").click(function () {
+    $("#french, #frenchimage").css("width", "100%");
+    })
+
+$("#maxeng").click(function () {
+    $("#eng, #engimage").css("width", "100%");
+    })
+
+
+$("#minart").click(function () {
+    $("#article").css("width", "50px");
+    })
+
+$("#minint").click(function () {
+    $("#int").css("width", "50px");
+    })
+
+$("#minfrench").click(function () {
+    $("#frenchimage").css("width", "50%");
+    $("#french").css("width", "50%");
+    })
+
+$("#mineng").click(function () {
+    $("#engimage,#eng").css("width", "50%");
+    })
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
