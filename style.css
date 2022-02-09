@@ -143,20 +143,6 @@ html{
 }
 
 
-
-/* .flex-containerbottom {
-  display: flex;
-  flex-flow: row wrap; 
-  justify-content: space-evenly;
-  position: absolute;
-  
-  padding: 0;
-  margin: 0;
-  z-index: 0; */
-/* 
-} */
-  
-
   .flex-item {
     padding: 5px;
     width: 300px;
@@ -203,14 +189,7 @@ html{
 
     }
 
-
-
-
-
-
-
-
-
+/* BLINK ANIMATION FOR INTERNSHIP */
     .blink {
       -webkit-animation: blink 1.30s linear infinite;
       -moz-animation: blink 1.30s linear infinite;
