@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="95.css" >
+    <title>Salome Lhuillery</title>
+    <link rel="icon" type="image/x-icon" href="msie2-2.png">
+</head>
+<body>
+ 
+<div class="navbar"> <!--Ici menu en haut de la page-->
+    <div class="dropup">
+        <button class="dropbtn" style="font-weight:bold;">My socials</button>
+        <div class="dropup-content">
+          <a href="https://fr.linkedin.com/in/salome-lhuillery"target="_blank"> <img src="linkedin.png" width="20px", height="20px", style="padding-right:10px;";>LinkedIn </a>
+          <a href="https://www.behance.net/salomelhllr"target="_blank"> <img src="behance.png" width="20px", height="20px", style="padding-right:10px;";>Behance </a>
+
+            </p>
+        </div>
+      </div>
+ 
+
+    <p class="date" style="margin-top: 5px;">
+        <script> document.write(new Date().toLocaleDateString()); </script>
+    </p>
+  </div>
+
+
+<!-- Div my face -->
+  <div class="window" id='avatar'class='flex-item'>
+      <div class="title-bar">
+            <div class="title-bar-text">
+                Hi, it's me
+            </div>
+        <div class="title-bar-controls">
+            <button aria-label="Close" onclick="closeavatar()"></button>
+        </div>
+      </div>
+
+      <div class="window-body">
+        <p>Check out my Behance profile to see my latest design projects and get inspired!</p>
+        <div class="iframely-embed"><div class="iframely-responsive" style="height: 240px; padding-bottom: 0;"><a href="https://www.behance.net/salomelhllr" data-iframely-url="//iframely.net/AogrOWM"></a></div></div><script async src="//iframely.net/embed.js"></script>
+      </div>
+    </div>
+
+<!-- ERROR MSG -->
+<div class="flex-container article" id="music" style="display: block; ">
+  <div class="window" style="min-width: 200px;">
+      <div class="title-bar">
+        <div class="title-bar-text"> No job found</div>
+        <div class="title-bar-controls">
+          <button aria-label="Close" onclick="closemusic()"></button>
+        </div>
+      </div>
+      <div class="window-body">
+          <div class="content">
+            <div class="error">
+              <img src="error.png" />
+            </div>
+            <div class="errmsg">
+              <span class="blink">
+                <p>Error: The file C:\currentJob is missing or corrupt. No currentJob found.</p>
+              </span>
+              <p>If problem persists, contact Salome Lhuillery at lhuillery.salome@gmail.com</p>
+              
+            </div>
+
+          <section class="field-row" style="justify-content: flex-end">
+            <a href="mailto: lhuillery.salome@gmail.com"><button><u>E</u>mail&gt;&gt;
+            </button></a>
+            <button onclick="closemusic()">Next time?</button>
+         </section>
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ICONS -->
+    <div class="" id="iconbottom">
+        <div class="folder_icon" id="icon1">
+            <img src="file98.png" alt="" ondblclick="opencv()">
+            <p style="padding-left: 12px;">CV</p>
+        </div>
+        <div class="email" id="icon2">
+            <img src="outlook_express-4.png" ondblclick=sendemail()> 
+            <p style="padding-left: 3px;">Contact</p>
+        </div>
+        <div class="article" id="icon3">
+            <img src="write_wordpad-1.png" style="width: 45px; height: 45px;" ondblclick="openarticle()"> 
+            <p style="padding-left: 3px;">Read</p>
+        </div>
+        <div></div>
+        <div></div>
+    </div>
+
+<!-- CV QUI APPARAIT french-->
+    <div class="flex-container cv french" id="french" style="display: none;">
+        <div class="window" style="min-width: 1100px;">
+            <div class="title-bar">
+              <div class="title-bar-text">Mon CV</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize" id="minfrench"></button>
+                <button aria-label="Maximize" id="maxfrench"></button>
+                <button aria-label="Close" onclick="closefrench()"></button>
+              </div>
+            </div>
+            <div class="window-body">
+                <img src="CV Salome Lhuillery.png" id="frenchimage">
+            </div>
+          </div>
+        </div>
+
+<!-- CV QUI APPARAIT english-->
+    <div class="flex-container cv eng" id="eng" style="display: none;">
+        <div class="window" style="min-width: 1100px;">
+            <div class="title-bar">
+              <div class="title-bar-text">My resume</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize" id="mineng"></button>
+                <button aria-label="Maximize" id="maxeng"></button>
+                <button aria-label="Close" onclick="closeeng()"></button>
+              </div>
+            </div>
+            <div class="window-body">
+                <img src="CV Salome Lhuillery EN.png" id="frenchimage">
+            </div>
+          </div>
+        </div>
+
+<!-- CHOIX DU CV -->
+        <div class="flex-container CV" id="cv" style="display: none; margin-top: 15%;">
+            <div class="window" style="min-width: 200px;">
+                <div class="title-bar">
+                  <div class="title-bar-text">Mon CV</div>
+                  <div class="title-bar-controls">
+                    <button aria-label="Minimize" id="mincv"></button>
+                    <button aria-label="Maximize" id="maxcv"></button>
+                    <button aria-label="Close" onclick="closecv()"></button>
+                  </div>
+                </div>
+                <section class="field-row" style="justify-content: flex-start; margin: 10px 0 0 10px;" >
+                <div class="article" id="icon3">
+                    <img src="world-4.png" ondblclick="openfrench()"style="padding-right:20px;"> 
+                    <p style="color: black;">Français</p>
+                </div>
+                <div class="article" id="icon3">
+                    <img src="world-4.png" ondblclick="openeng()"> 
+                    <p style="color: black;">English</p>
+                </div>
+            </section>
+              </div>
+            </div>
+
+
+
+
+
+<!-- ARTICLE QUI APPARAIT -->
+        <div class="flex-container article" id="article" style="display: none;">
+            <div class="window" style="min-width: 200px;">
+                <div class="title-bar">
+                  <div class="title-bar-text">Mon article</div>
+                  <div class="title-bar-controls">
+                    <button aria-label="Minimize" id="minart"></button>
+                    <button aria-label="Close" onclick="closearticle()"></button>
+                  </div>
+                </div>
+                <div class="window-body">
+                    <p style="color:black; font-size: 12px;">Want to learn why Princess Peach deserves more screen time than just getting kidnapped all the time? <br> Check out my article on women's representation in video games, published by the Gender in Geopolitics Institute - it's the Mario of all articles!</p>
+                    <section class="field-row" style="justify-content: flex-end">
+                        <a href="https://igg-geo.org/?p=2884&lang=en"target="_blank"><button>Read</button></a>
+                    <button>Cancel</button>
+                    </section>
+                </div>
+              </div>
+            </div>
+</div>
+
+
+
+
+
+
+
+<!-- SCRIPT CI DESSOUS -->
+<script src="jssalome.js"></script>
+<script src="jquery-3.6.0.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+<script>
+$("#cv").draggable();
+$("#avatar").draggable();
+$("#icon1,#icon2,#icon3").draggable();
+$("#article").draggable();
+$("#french").draggable();
+$("#eng").draggable();
+$("#music").draggable();
+
+$("#maxcv").click(function () {
+    $("#cv, #cvimage").css("width", "100%");
+    })
+
+$("#maxfrench").click(function () {
+    $("#french, #frenchimage").css("width", "100%");
+    })
+
+$("#maxeng").click(function () {
+    $("#eng, #frencheng").css("width", "100%");
+    })
+
+$("#mincv").click(function () {
+    $("#cv,#cvimage").css("width", "50px");
+    })
+
+
+$("#minart").click(function () {
+    $("#article").css("width", "50px");
+    })
+
+$("#minfrench").click(function () {
+    $("#frenchimage,#french").css("width", "50px");
+    })
+
+$("#mineng").click(function () {
+    $("#engimage,#eng").css("width", "50px");
+    })
+
+
+
+</script>
+
+
+</body>
+</html>
