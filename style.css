@@ -1,6 +1,6 @@
 .navbar {
     /* overflow: hidden; */
-    background-color: #E5A0CC;
+    background-color: #BFC7C9;
     border-top: 1px #FCFEFC solid;
     position: fixed; /* Set the navbar to fixed position */
     bottom: 0; /* Position the navbar at the top of the page */
@@ -13,7 +13,7 @@
 
     /* Dropup Button */
     .dropbtn {
-      background-color: #E5A0CC;
+      background-color: #BFC7C9;
       color: rgb(0, 0, 0);
       font-size: 12px;
       border: none;
@@ -34,10 +34,10 @@
       display: none;
       position: absolute;
       bottom: 28px;
-      background-color: #E5A0CC;
+      background-color: #BFC7C9;
       min-width: 160px;
-      z-index: 8;
-      background-color: #E5A0CC;
+      z-index: 1;
+      background-color: #BFC7C9;
       border-top: 1px #FCFEFC solid;
       border-right: 1px #7C7E7C solid;;
     }
@@ -75,7 +75,7 @@
     display: block;
     color: black;
     padding: 0px  20px ;
-    font-size: 14px;
+    font-size: 12px;
     border:1px #7C7E7C solid;
     box-shadow: inset 1px 1px 1px #7F7D7F;
     margin-right: 10px;
@@ -84,7 +84,7 @@
   }
  
 html{
-    background-image: url('background.png');
+    background-image: url('Bliss.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -92,23 +92,15 @@ html{
     color: black;
     }
  
-#name {
-    min-width: 50%;
-    margin-top: 100%;
-    z-index: 0;
-}
+
 
 #avatar{
   float: right;
   display: block;
-  margin-bottom:50%;
+  
 }
 
-.top {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
+
 
 .cv{
   z-index: 99;
@@ -122,10 +114,7 @@ html{
   flex-flow: row wrap; 
   justify-content: space-around;
   z-index: 0;
-  padding: 0;
-  margin: 0px;
-  margin-left: 10vw;
-
+  padding: 0;  
 }
 
 #french{
@@ -137,93 +126,89 @@ html{
 }
 
 #iconbottom{
-  margin-top: 70vh;
-  margin-left: 5vw;
-  z-index: 5;
+  margin: 25px 0 0 15px;
 }
 
 
-  .flex-item {
-    padding: 5px;
-    width: 300px;
-    height: 150px;
-    margin-top: 10px;
-    line-height: 150px;
-  }
+.folder_icon, .email, .article{
+  padding-bottom: 15px;
+}
+
+
+.flex-containerbottom {
+  display: flex;
+  flex-flow: row wrap; 
+  justify-content: space-evenly;
+  position: absolute;
+  
+  padding: 0;
+  margin: 0;
+  z-index: 0; 
+ 
+} 
+  
+
 
 
 .window{
-  color: pink;
-  max-width: 100vw;
- 
+  color: black;
 }
 
-
-
-.title-bar-text{
-  font-size: 12px;
-}
-
-#music{
-  display: block; margin-top: 10%; margin-left: 70%;
-}
+  /* Main content
+  .main {
+    margin-top: 10px; /* Add a top margin to avoid content overlay */
  
 
-    @media (max-width: 1000px) {
-#music{
-  display: none; 
-  margin-top: 0%; 
-  margin-left: 0%;
-  }
 
-  #avatar {
-    display: none;
-  }
 
-  #maxfrench{
-    display:none;
-  }
-  #maxeng{
-    display:none;
-  }
 
+/* MESSAGE ERREUR STYLE */
+    .content .error{
+      position:relative;
+      float:left;
+      top:50%;
+    }
+    .errmsg{
+      position: relative;
+      font-size: 12px;
+      font-weight: 100;
+      width: 300px;
+      left: 8px;
+      margin-left: 40px;
     }
 
-/* BLINK ANIMATION FOR INTERNSHIP */
+
+/* BLINKING TEXT EFFECT */
     .blink {
-      -webkit-animation: blink 1.30s linear infinite;
-      -moz-animation: blink 1.30s linear infinite;
-      -ms-animation: blink 1.30s linear infinite;
-      -o-animation: blink 1.30s linear infinite;
-      animation: blink 1.30s linear infinite;
-     }
-     @-webkit-keyframes blink {
-      0% { opacity: 1; }
-      50% { opacity: 1; }
-      50.01% { opacity: 0; }
-      100% { opacity: 0; }
-     }
-     @-moz-keyframes blink {
-      0% { opacity: 1; }
-      50% { opacity: 1; }
-      50.01% { opacity: 0; }
-      100% { opacity: 0; }
-     }
-     @-ms-keyframes blink {
-      0% { opacity: 1; }
-      50% { opacity: 1; }
-      50.01% { opacity: 0; }
-      100% { opacity: 0; }
-     }
-     @-o-keyframes blink {
-      0% { opacity: 1; }
-      50% { opacity: 1; }
-      50.01% { opacity: 0; }
-      100% { opacity: 0; }
-     }
-     @keyframes blink {
-      0% { opacity: 1; }
-      50% { opacity: 1; }
-      50.01% { opacity: 0; }
-      100% { opacity: 0; }
-     }
+      animation: blink-animation 1s steps(5, start) infinite;
+      -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    }
+    @keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+    @-webkit-keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+
+
+    @media only screen and (min-width: 600px) {
+      .window{
+        margin: 5vh 10vw 0 0;
+      }
+
+      #music{
+        margin-top: 20%; margin-left: 40vw;
+      }
+    }
+
+
+    @media only screen and (max-width: 600px) {
+      #music{
+        margin-top: 30vh;
+        z-index: 99999; 
+      }
+    }

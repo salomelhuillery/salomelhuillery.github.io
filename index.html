@@ -6,125 +6,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="95.css" >
-    <title>Salome Lhuillery ♡ </title>
-    <style>
-      body {font-size: 14px;}
-    </style>
+    <title>Salome Lhuillery</title>
+    <link rel="icon" type="image/x-icon" href="msie2-2.png">
 </head>
 <body>
  
-<div class="navbar"> 
-    <div class="dropup" style="z-index: 999;">
-        <button class="dropbtn" style="font-weight:bold;">Check me out on socials</button>
-        <div class="dropup-content" style="z-index: 999;">
+<div class="navbar"> <!--Ici menu en haut de la page-->
+    <div class="dropup">
+        <button class="dropbtn" style="font-weight:bold;">My socials</button>
+        <div class="dropup-content">
           <a href="https://fr.linkedin.com/in/salome-lhuillery"target="_blank"> <img src="linkedin.png" width="20px", height="20px", style="padding-right:10px;";>LinkedIn </a>
-         
-          <a href="https://fr.linkedin.com/in/salome-lhuillery"target="_blank"> <img src="instagram.png" width="20px", height="20px", style="padding-right:10px;";>Instagram </a>
+          <a href="https://www.behance.net/salomelhllr"target="_blank"> <img src="behance.png" width="20px", height="20px", style="padding-right:10px;";>Behance </a>
 
+            </p>
         </div>
       </div>
  
 
-    <p class="date">
+    <p class="date" style="margin-top: 5px;">
         <script> document.write(new Date().toLocaleDateString()); </script>
     </p>
   </div>
 
 
-
-
-
-<div class='top'>
-<!-- NAME LOGO -->
-    <div class="flex-container">
-        <div class='google'>
-        <img src="salome.png" " id="name" class="flex-item" >
-        </div>
-<!-- AVATAR -->
-        <div class="window" style="margin: 200px; width: 320px" id='avatar'class='flex-item'>
-            <div class="title-bar">
-                <div class="title-bar-text">
-                        Hello, it's me
-                </div>
-                <div class="title-bar-controls">
-                    <button aria-label="Close" onclick="closeavatar()" ></button>
-                </div>
+<!-- Div my face -->
+  <div class="window" id='avatar'class='flex-item'>
+      <div class="title-bar">
+            <div class="title-bar-text">
+                Hi, it's me
             </div>
-            <div class="window-body">
-                <img src="helloitsme.png" style="max-width: 300px;">
-            </div>
+        <div class="title-bar-controls">
+            <button aria-label="Close" onclick="closeavatar()"></button>
         </div>
+      </div>
+
+      <div class="window-body">
+        <p>Check out my Behance profile to see my latest design projects and get inspired!</p>
+        <div class="iframely-embed"><div class="iframely-responsive" style="height: 240px; padding-bottom: 0;"><a href="https://www.behance.net/salomelhllr" data-iframely-url="//iframely.net/AogrOWM"></a></div></div><script async src="//iframely.net/embed.js"></script>
+      </div>
     </div>
+
+<!-- ERROR MSG -->
+<div class="flex-container article" id="music" style="display: block; ">
+  <div class="window" style="min-width: 200px;">
+      <div class="title-bar">
+        <div class="title-bar-text"> No job found</div>
+        <div class="title-bar-controls">
+          <button aria-label="Close" onclick="closemusic()"></button>
+        </div>
+      </div>
+      <div class="window-body">
+          <div class="content">
+            <div class="error">
+              <img src="error.png" />
+            </div>
+            <div class="errmsg">
+              <span class="blink">
+                <p>Error: The file C:\currentJob is missing or corrupt. No currentJob found.</p>
+              </span>
+              <p>If problem persists, contact Salome Lhuillery at lhuillery.salome@gmail.com</p>
+              
+            </div>
+
+          <section class="field-row" style="justify-content: flex-end">
+            <a href="mailto: lhuillery.salome@gmail.com"><button><u>E</u>mail&gt;&gt;
+            </button></a>
+            <button onclick="closemusic()">Next time?</button>
+         </section>
+          
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!-- ICONS -->
-    <div class="flex-container" id="iconbottom">
-        <div class="folder_icon" style="padding-right:20px; padding-top:20px; padding-left:20px;" id="icon1">
-            <img src="file.png" alt="" onclick="opencv()">
-            <p style="color: #CE119C; padding-left: 10px;">CV</p>
+    <div class="" id="iconbottom">
+        <div class="folder_icon" id="icon1">
+            <img src="file98.png" alt="" ondblclick="opencv()">
+            <p style="padding-left: 12px;">CV</p>
         </div>
         <div class="email" id="icon2">
-            <img src="email.png"  style="padding-right:20px; padding-top:20px; padding-left:20px" onclick=sendemail()> 
-            <p style="color: #CE119C; padding-left: 20px;">Contact</p>
+            <img src="outlook_express-4.png" ondblclick=sendemail()> 
+            <p style="padding-left: 3px;">Contact</p>
         </div>
         <div class="article" id="icon3">
-            <img src="NOTEPAD.png" style="padding-right:20px; padding-top:20px; padding-left:20px" onclick="openarticle()"> 
-            <p style="color: #CE119C; padding-left: 20px;">Read</p>
+            <img src="write_wordpad-1.png" style="width: 45px; height: 45px;" ondblclick="openarticle()"> 
+            <p style="padding-left: 3px;">Read</p>
         </div>
         <div></div>
         <div></div>
     </div>
 
-<!-- CV FRENCH-->
+<!-- CV QUI APPARAIT french-->
     <div class="flex-container cv french" id="french" style="display: none;">
-        <div class="window" style="min-width: 100%;">
+        <div class="window" style="min-width: 1100px;">
             <div class="title-bar">
               <div class="title-bar-text">Mon CV</div>
               <div class="title-bar-controls">
                 <button aria-label="Minimize" id="minfrench"></button>
-                <button aria-label="Maximize" id="maxfrench" class="maxx"></button>
+                <button aria-label="Maximize" id="maxfrench"></button>
                 <button aria-label="Close" onclick="closefrench()"></button>
               </div>
             </div>
             <div class="window-body">
-                <img src="CV_FR.png" id="frenchimage"  style="max-width: 100vw;">
+                <img src="CV Salome Lhuillery.png" id="frenchimage">
             </div>
           </div>
         </div>
 
-<!-- CV ENGLISH-->
+<!-- CV QUI APPARAIT english-->
     <div class="flex-container cv eng" id="eng" style="display: none;">
-        <div class="window" style="min-width: 100%;">
+        <div class="window" style="min-width: 1100px;">
             <div class="title-bar">
               <div class="title-bar-text">My resume</div>
               <div class="title-bar-controls">
                 <button aria-label="Minimize" id="mineng"></button>
-                <button aria-label="Maximize" id="maxeng" class="maxx"></button>
+                <button aria-label="Maximize" id="maxeng"></button>
                 <button aria-label="Close" onclick="closeeng()"></button>
               </div>
             </div>
             <div class="window-body">
-                <img src="CV_EN.png" id="engimage" style="max-width: 100vw;">
+                <img src="CV Salome Lhuillery EN.png" id="frenchimage">
             </div>
           </div>
         </div>
 
-<!-- CHOICE OF CV LANGUAGE -->
+<!-- CHOIX DU CV -->
         <div class="flex-container CV" id="cv" style="display: none; margin-top: 15%;">
             <div class="window" style="min-width: 200px;">
                 <div class="title-bar">
                   <div class="title-bar-text">Mon CV</div>
                   <div class="title-bar-controls">
+                    <button aria-label="Minimize" id="mincv"></button>
+                    <button aria-label="Maximize" id="maxcv"></button>
                     <button aria-label="Close" onclick="closecv()"></button>
                   </div>
                 </div>
-                <section class="field-row" style="justify-content: flex-start">
-                <div  id="icon3" style="padding-right:20px; padding-top:20px; padding-left:20px">
-                    <img src="world.png" onclick="openfrench()"> 
+                <section class="field-row" style="justify-content: flex-start; margin: 10px 0 0 10px;" >
+                <div class="article" id="icon3">
+                    <img src="world-4.png" ondblclick="openfrench()"style="padding-right:20px;"> 
                     <p style="color: black;">Français</p>
                 </div>
-                <div  id="icon3"style="padding-right:20px; padding-top:20px; padding-left:20px">
-                    <img src="world.png" onclick="openeng()" > 
+                <div class="article" id="icon3">
+                    <img src="world-4.png" ondblclick="openeng()"> 
                     <p style="color: black;">English</p>
                 </div>
             </section>
@@ -135,7 +160,7 @@
 
 
 
-<!-- ARTICLE -->
+<!-- ARTICLE QUI APPARAIT -->
         <div class="flex-container article" id="article" style="display: none;">
             <div class="window" style="min-width: 200px;">
                 <div class="title-bar">
@@ -146,10 +171,10 @@
                   </div>
                 </div>
                 <div class="window-body">
-                    <p style="color:black; font-size: 12px;">Read my article on women's representation in video games published by the Gender in Geopolitics Institute.</p>
+                    <p style="color:black; font-size: 12px;">Want to learn why Princess Peach deserves more screen time than just getting kidnapped all the time? <br> Check out my article on women's representation in video games, published by the Gender in Geopolitics Institute - it's the Mario of all articles!</p>
                     <section class="field-row" style="justify-content: flex-end">
                         <a href="https://igg-geo.org/?p=2884&lang=en"target="_blank"><button>Read</button></a>
-                    <button onclick="closearticle()">Cancel</button>
+                    <button>Cancel</button>
                     </section>
                 </div>
               </div>
@@ -159,66 +184,10 @@
 
 
 
-<!-- SPOTIFY -->
-<div class="flex-container article" id="music" >
-    <div class="window" style="min-width: 200px;">
-        <div class="title-bar">
-          <div class="title-bar-text">My cosy playlist</div>
-          <div class="title-bar-controls">
-            <button aria-label="Close" onclick="closemusic()"></button>
-          </div>
-        </div>
-        <div class="window-body">
-            <p style="color:black; font-size: 12px;">Listen to my cosy playlist.</p>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2aWIbieB94ydZI1SBim7fU?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-            </section>
-        </div>
-      </div>
-    </div>
-</div>
-
-
-<!-- INTERSHIP -->
-<div class="flex-container article" id="int" style="display: block; margin-top: 20%; margin-right: 10%;">
-  <div class="window" style="min-width: 200px;">
-      <div class="title-bar">
-        <div class="title-bar-text">Internship wanted</div>
-        <div class="title-bar-controls">
-          <button aria-label="Minimize" id="minint"></button>
-          <button aria-label="Close" onclick="closeint()"></button>
-        </div>
-      </div>
-      <div class="window-body">
-          <p style="color:black; font-size: 18px;" class="blink">Je cherche un stage en web design du 10 Juin au 29 Juillet 2022 !</p>
-          <section class="field-row" style="justify-content: flex-end">
-              <a href="mailto:salomelhuillery@gmail.com"><button>Contact me</button></a>
-          <button onclick="closeint()">Next time ?</button>
-          </section>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- LAVA NOT SURE IF I'LL INCLUDE IT-->
-<!-- <div class="flex-container article" id="int" style="display: block; margin-top: 20%; margin-right: 10%;">
-  <div class="window" style="min-width: 200px;">
-      <div class="title-bar">
-        <div class="title-bar-text">Internship wanted</div>
-        <div class="title-bar-controls">
-          <button aria-label="Minimize" id="minint"></button>
-          <button aria-label="Close" onclick="closeint()"></button>
-        </div>
-      </div>
-      <div class="window-body">
-          <img src="lava.gif">
-      </div>
-    </div>
-  </div>
-</div> -->
 
 
 
-<!-- SCRIPT RESSOURCES-->
+<!-- SCRIPT CI DESSOUS -->
 <script src="jssalome.js"></script>
 <script src="jquery-3.6.0.js"></script>
 
@@ -233,7 +202,6 @@ $("#article").draggable();
 $("#french").draggable();
 $("#eng").draggable();
 $("#music").draggable();
-$("#int").draggable();
 
 $("#maxcv").click(function () {
     $("#cv, #cvimage").css("width", "100%");
@@ -244,7 +212,11 @@ $("#maxfrench").click(function () {
     })
 
 $("#maxeng").click(function () {
-    $("#eng, #engimage").css("width", "100%");
+    $("#eng, #frencheng").css("width", "100%");
+    })
+
+$("#mincv").click(function () {
+    $("#cv,#cvimage").css("width", "50px");
     })
 
 
@@ -252,21 +224,13 @@ $("#minart").click(function () {
     $("#article").css("width", "50px");
     })
 
-$("#minint").click(function () {
-    $("#int").css("width", "50px");
-    })
-
 $("#minfrench").click(function () {
-    $("#frenchimage").css("width", "50%");
-    $("#french").css("width", "50%");
+    $("#frenchimage,#french").css("width", "50px");
     })
 
 $("#mineng").click(function () {
-    $("#engimage,#eng").css("width", "50%");
+    $("#engimage,#eng").css("width", "50px");
     })
-
-
-
 
 
 

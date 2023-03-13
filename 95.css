@@ -89,7 +89,7 @@ ul.tree-view,
 .title-bar {
   font-family: "Pixelated MS Sans Serif", Arial;
   -webkit-font-smoothing: none;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 h1 {
@@ -113,7 +113,7 @@ u {
   border-bottom: 0.5px solid #222222;
 }
 
-button {
+/* button {
   box-sizing: border-box;
   border: none;
   background: #E5A0CC;
@@ -125,6 +125,23 @@ button {
   min-width: 75px;
   min-height: 23px;
   padding: 0 12px;
+}*/
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  box-sizing: border-box;
+  border: none;
+  color: transparent;
+  text-shadow: 0 0 var(--text-color);
+  background: var(--surface);
+  box-shadow: var(--border-raised-outer), var(--border-raised-inner);
+  border-radius: 0;
+
+  min-width: 75px;
+  min-height: 23px;
+  padding: 0 12px;
+  color: #000;
 }
 
 button:not(:disabled):active {
@@ -149,15 +166,18 @@ button:focus {
 }
 
 .window {
-  box-shadow: inset -1px -1px #9729F3,
+  /* box-shadow: inset -1px -1px #9729F3,
     inset 1px 1px #9729F3, inset -2px -2px #9729F3,
     inset 2px 2px #9729F3;
   background: #ECCBEA;
+  padding: 3px; */
+  box-shadow: var(--border-window-outer), var(--border-window-inner);
+  background: var(--surface);
   padding: 3px;
 }
 
 .title-bar {
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     #E5A0CC,
     #E5A0CC
@@ -165,12 +185,25 @@ button:focus {
   padding: 4px;
   display: flex;
   justify-content: space-between;
+  align-items: center; */
+  background: linear-gradient(
+    90deg,
+    var(--dialog-blue),
+    var(--dialog-blue-light)
+  );
+  padding: 3px 2px 3px 3px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .title-bar-text {
-  font-weight: bold;
+  /* font-weight: bold;
   color: #5F07E0;
+  letter-spacing: 0;
+  margin-right: 24px; */
+  font-weight: bold;
+  color: white;
   letter-spacing: 0;
   margin-right: 24px;
 }

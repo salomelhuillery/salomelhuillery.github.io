@@ -31,9 +31,6 @@ function closemusic()
 function closeavatar()
 {avatar.style.display = 'none';}
 
-function closeint()
-{int.style.display = 'none';}
-
 
 //  function maximize(){
 //     if (document.getElementById('cv').style.display = "block")
